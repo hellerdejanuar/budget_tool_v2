@@ -37,7 +37,7 @@ export default function BudgetItem(props) {
             defaultValue={props.itemData.State}
             />
 
-          <AccordionButton flexGrow='1' sx={{'_hover':'none'}
+          <AccordionButton flexGrow='1' sx={{'_hover':{}}
           }>
             <Box as="span" textAlign='left'>
               <h2>{props.itemData.id}. {props.itemData.Label}</h2> 
@@ -52,7 +52,7 @@ export default function BudgetItem(props) {
         </Flex>
 
         <AccordionPanel pl={'4em'}>
-          {props.itemData.description}
+          {props.itemData.Description}
         </AccordionPanel>
 
       </AccordionItem>
